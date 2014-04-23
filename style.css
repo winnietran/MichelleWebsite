@@ -1,0 +1,115 @@
+/*michysoong 1.0 Stylesheet
+Winnie Tran
+2014*/
+/**/
+/*michysoong 1.0 Stylesheet
+Winnie Tran
+2014*/
+/*Do not edit .block, .clearfix, .center, .left_float, .right_float*/
+.block {
+  display: block;
+}
+.clearfix {
+  clear: both;
+}
+.center {
+  text-align: center;
+}
+.left_float {
+  float: left;
+}
+.right_float {
+  float: right;
+}
+/*Colour palette
+#ececec; = grey, #303030; = black, pink = #ecaec8*/
+h1 {
+  font-size: 25px;
+  color: #3fb5b4;
+  text-align: center;
+}
+p {
+  font-size: 12px;
+  color: #303030;
+}
+img {
+  cursor: cell;
+}
+body {
+  /*Can edit portions below*/
+
+  cursor: cell;
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  /*change font after the "font-family:"*/
+
+}
+body .container {
+  position: relative;
+  width: 101.1%;
+  top: -16px;
+  left: -7px;
+  margin: 0 auto;
+  /*replace URL to change background image
+		comment out the background-image part if you want just a colour background*/
+
+  background-image: url('C:/Users/Winnie/Desktop/Michelle/background.png');
+  /*change background color using a hex code (ie. #FFFFFF = white)*/
+
+  background-color: #ececec;
+  display: block;
+}
+body .container .banner#banner_image {
+  position: relative;
+  margin: 1% 1%;
+  top: 15px;
+  display: block;
+  text-align: center;
+}
+body .container .nav {
+  text-align: center;
+  margin: 2.5%;
+}
+body .container .nav a {
+  cursor: cell;
+  text-decoration: none;
+  color: #303030;
+}
+body .container .nav a:hover {
+  text-transform: uppercase;
+}
+body .container .nav a:visited,
+body .container .nav a:active {
+  text-decoration: none;
+  color: #303030;
+}
+body .container .nav ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  display: inline !important;
+}
+body .container .about_me {
+  clear: both;
+  display: inline-block !important;
+  text-align: center;
+}
+body .container .about_me h1 {
+  text-align: left;
+  margin: 0% 18.5%;
+}
+body .container .about_me#one {
+  text-align: left;
+  position: relative;
+  margin: -20% 0% 0% 0%;
+  padding: 0px 20px 0px 20px;
+  width: 30%;
+  height: 50%;
+}
+body .container .about_me#two {
+  text-align: left;
+  position: relative;
+  margin: 0% auto;
+  padding: 0px 20px 0px 20px;
+  width: 30%;
+  height: 50%;
+}
