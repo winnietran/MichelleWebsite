@@ -1,11 +1,5 @@
-/*michysoong 1.0 Stylesheet
-Winnie Tran
-2014*/
-/**/
-/*michysoong 1.0 Stylesheet
-Winnie Tran
-2014*/
-/*Do not edit .block, .clearfix, .center, .left_float, .right_float*/
+/*Please don't touch these! :) */
+
 .block {
   display: block;
 }
@@ -21,58 +15,79 @@ Winnie Tran
 .right_float {
   float: right;
 }
-/*Colour palette
-#ececec; = grey, #303030; = black, pink = #ecaec8*/
+
+html{
+
+/*  cursor: can be a range of cursor defaults (ex. crosshair)
+or can be custom.
+
+If custom, use the format:
+cursor: url('URL HERE');*/
+
+	cursor: cell;
+}
+
+/*h1 = Main title
+(Don't forget the semicolons at the end!)
+
+Under h1, only edit the following:
+
+color: #xxxxxx; <- What colour the title will be! (ex. #FFFFFF = White)
+font-family: Font Name; <- What font the title will be!
+
+Although you can change font-size, I'd suggest you don't, for the sake of this layout!
+
+*/
 h1 {
-  font-size: 25px;
-  color: #3fb5b4;
   text-align: center;
+  color: #FD535E;
+  font-family: Lobster, Raleway, sans-serif;
+  font-size: 5em;
 }
-p {
-  font-size: 12px;
-  color: #303030;
-}
-img {
-  cursor: cell;
-}
+
 body {
-  /*Can edit portions below*/
+  /*Can edit following portions below:
+  (Again, don't forget the semicolons, quotation marks, or quote marks!)
 
-  cursor: cell;
+  font-family: Insert name of font; <- Changes font of the Navigation Bar
+  background-image: url('URL HERE'); <- Replace URL to change background image!
+  background-color: #xxxxxx; <- If you don't want an image and just a background colour*/
+
   font-family: Raleway, Helvetica, Arial, sans-serif;
-  /*change font after the "font-family:"*/
-
-}
-body .container {
-  position: relative;
-  width: 101.1%;
-  top: -16px;
-  left: -7px;
-  margin: 0 auto;
-  /*replace URL to change background image
-		comment out the background-image part if you want just a colour background*/
-
-  background-image: url('C:/Users/Winnie/Desktop/Michelle/background.png');
-  /*change background color using a hex code (ie. #FFFFFF = white)*/
-
+  background-image: url('C:/Users/Winnie/Documents/Michelle/ahoy.jpg');
   background-color: #ececec;
+}
+
+/*Don't edit anything below unless you find a comment!*/
+body .container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
   display: block;
 }
-body .container .banner#banner_image {
+body .container .placeholder {
   position: relative;
-  margin: 1% 1%;
-  top: 15px;
-  display: block;
-  text-align: center;
+  width: 50%;
+  margin: 22%;
 }
 body .container .nav {
+  font-size: 2.5em;
   text-align: center;
-  margin: 2.5%;
+}
+body .container .nav #nav_box {
+  padding: 3px;
+  width: 90%;
+  /*Only edit 'background-color' to change the colour of the box around the navigation bar*/
+  background-color: #303030;
+  margin: 0 auto;
+  opacity: 0.65;
 }
 body .container .nav a {
+  /*If you changed the cursor, keep it consistent and change it here too!*/
   cursor: cell;
   text-decoration: none;
-  color: #303030;
+  /*Only edit 'color' to change to colour of the navigation links*/
+  color: #f9f9f9;
 }
 body .container .nav a:hover {
   text-transform: uppercase;
@@ -80,7 +95,8 @@ body .container .nav a:hover {
 body .container .nav a:visited,
 body .container .nav a:active {
   text-decoration: none;
-  color: #303030;
+  /*If you changed the 'color' above, paste the same colour code below!*/
+  color: #f9f9f9;
 }
 body .container .nav ul li {
   position: relative;
@@ -88,28 +104,21 @@ body .container .nav ul li {
   list-style: none;
   display: inline !important;
 }
-body .container .about_me {
+body .container .title a {
   clear: both;
-  display: inline-block !important;
+  display: block;
   text-align: center;
+  text-decoration: none;
+  /*If you changed the cursor anywhere, change it here too!*/
+  cursor: cell;
 }
-body .container .about_me h1 {
-  text-align: left;
-  margin: 0% 18.5%;
+body .container .title #title_box {
+  margin: 0 auto;
+  width: 50%;
+  /*Only edit 'color' to change the colour of the box around the main title*/
+  background-color: #ececec;
 }
-body .container .about_me#one {
-  text-align: left;
-  position: relative;
-  margin: -20% 0% 0% 0%;
-  padding: 0px 20px 0px 20px;
-  width: 30%;
-  height: 50%;
-}
-body .container .about_me#two {
-  text-align: left;
-  position: relative;
-  margin: 0% auto;
-  padding: 0px 20px 0px 20px;
-  width: 30%;
-  height: 50%;
+body .container .title h1 {
+  text-align: center;
+  margin: 10%;
 }
