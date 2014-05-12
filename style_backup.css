@@ -1,0 +1,124 @@
+/*Please don't touch these! :) */
+
+.block {
+  display: block;
+}
+.clearfix {
+  clear: both;
+}
+.center {
+  text-align: center;
+}
+.left_float {
+  float: left;
+}
+.right_float {
+  float: right;
+}
+
+html{
+
+/*  cursor: can be a range of cursor defaults (ex. crosshair)
+or can be custom.
+
+If custom, use the format:
+cursor: url('URL HERE');*/
+
+	cursor: cell;
+}
+
+/*h1 = Main title
+(Don't forget the semicolons at the end!)
+
+Under h1, only edit the following:
+
+color: #xxxxxx; <- What colour the title will be! (ex. #FFFFFF = White)
+font-family: Font Name; <- What font the title will be!
+
+Although you can change font-size, I'd suggest you don't, for the sake of this layout!
+
+*/
+h1 {
+  text-align: center;
+  color: #FD535E;
+  font-family: Lobster, Raleway, sans-serif;
+  font-size: 5em;
+}
+
+body {
+  /*Can edit following portions below:
+  (Again, don't forget the semicolons, quotation marks, or quote marks!)
+
+  font-family: Insert name of font; <- Changes font of the Navigation Bar
+  background-image: url('URL HERE'); <- Replace URL to change background image!
+  background-color: #xxxxxx; <- If you don't want an image and just a background colour*/
+
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  background-image: url('C:/Users/Winnie/Documents/Michelle/ahoy.jpg');
+  background-color: #ececec;
+}
+
+/*Don't edit anything below unless you find a comment!*/
+body .container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+body .container .placeholder {
+  position: relative;
+  width: 50%;
+  margin: 22%;
+}
+body .container .nav {
+  font-size: 2.5em;
+  text-align: center;
+}
+body .container .nav #nav_box {
+  padding: 3px;
+  width: 90%;
+  /*Only edit 'background-color' to change the colour of the box around the navigation bar*/
+  background-color: #303030;
+  margin: 0 auto;
+  opacity: 0.65;
+}
+body .container .nav a {
+  /*If you changed the cursor, keep it consistent and change it here too!*/
+  cursor: cell;
+  text-decoration: none;
+  /*Only edit 'color' to change to colour of the navigation links*/
+  color: #f9f9f9;
+}
+body .container .nav a:hover {
+  text-transform: uppercase;
+}
+body .container .nav a:visited,
+body .container .nav a:active {
+  text-decoration: none;
+  /*If you changed the 'color' above, paste the same colour code below!*/
+  color: #f9f9f9;
+}
+body .container .nav ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  display: inline !important;
+}
+body .container .title a {
+  clear: both;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  /*If you changed the cursor anywhere, change it here too!*/
+  cursor: cell;
+}
+body .container .title #title_box {
+  margin: 0 auto;
+  width: 50%;
+  /*Only edit 'color' to change the colour of the box around the main title*/
+  background-color: #ececec;
+}
+body .container .title h1 {
+  text-align: center;
+  margin: 10%;
+}

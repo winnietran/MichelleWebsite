@@ -1,0 +1,218 @@
+.block{
+	display: block;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.center{
+	text-align: center;
+}
+
+.left_float{
+	float: left;
+}
+
+.right_float{
+	float: right;
+}
+
+/*Colour palette*/
+@grey: #ECECEC;
+@black: #303030;
+@white: #F9F9F9;
+@pink: #FD535E;
+@blue: #3FB5B4;
+@navy: #1F243E;
+
+html{
+	cursor: cell;
+
+	a{
+		cursor: cell;
+	}
+
+
+h1{
+	color: @pink;
+	.center;
+}
+
+p{
+	font-size: 0.7em;
+	color: @white;
+	letter-spacing: 1px;
+}
+
+body{
+	/*Can edit portions below*/
+	font-family: Raleway, Helvetica, Arial, sans-serif; /*change font after the "font-family:"*/
+	
+	/*replace URL to change background image
+	comment out the background-image part if you want just a colour background*/
+	background-image: url('C:/Users/Winnie/Documents/Michelle/ahoy.jpg');
+	
+	/*change background color using a hex code (ie. #FFFFFF = white)*/
+	background-color: @grey;
+
+	cursor: cell;
+
+	.container{
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		.block;
+	
+		.title{
+			.clearfix;
+			.block;
+			cursor: cell;
+
+			#title_box{
+				.center;
+				position: relative;
+				top: -10px;
+				margin: 2% auto;
+				width: 40%;
+				background-color: @grey;
+				opacity: 0.95;
+
+				a h1{
+					position: relative;
+					top: 15px;
+					text-align: center;
+					font-family: Lobster, sans-serif;
+					color: @pink;
+					font-size: 3.5em;
+				}
+
+				a h1:hover{
+					opacity: 0.75;
+				}
+
+				a{
+					text-decoration: none;
+					font-size: 1.2em;
+					color: @black;
+				}
+
+				li a:hover{
+					text-transform: uppercase;
+				}
+
+				a:visited, a:active{
+					text-decoration: none;
+					color: @black;
+				}
+
+				ul li{
+					position: relative;
+					top: -30px;
+					width: 100%;
+					list-style: none;
+					display: inline !important;
+				}
+
+			}//end title_box
+
+		}//end title
+
+			.profiles_container{
+				width: 60%;
+				#profiles{
+					.center;
+					.left_float;
+					background-color: @pink;
+					opacity: 0.95;
+					position: relative;
+					margin-left: 25%;
+					padding: 3%;
+					width: 50%;
+
+					h1{
+						color: @black !important;
+					}
+
+					h2{
+						font-family: Raleway;
+						font-size: 30px;
+						.center;
+						color: @black;
+					}
+
+					p{
+						font-family: FontAwesome;
+					}
+
+					i{
+						position: relative;
+						top: 15px;
+						margin: 2.5%;
+					}
+
+					a{
+						color: @black;
+						text-decoration: none;
+					}
+
+					a:visited, a:active{
+					text-decoration: none;
+					color: @black;
+					}
+
+					a:hover{
+						color: @white;
+						text-transform: uppercase;
+					}
+
+					a i{
+						color: @white;
+						text-decoration: none;
+					}
+
+					a i:visited, a i:active{
+					text-decoration: none;
+					color: @white;
+					}
+
+					a i:hover{
+						color: @black;
+						text-transform: uppercase;
+					}
+
+				}//end profiles
+
+			}//end profiles_container
+
+			.po_box{
+				.right_float;
+				margin-right: 25%;
+
+				#text_one{
+					background-color: @pink;
+					opacity: 0.95;
+					position: relative;
+					padding: 25%;
+					width: 100%;
+
+					h2{
+						font-size: 30px;
+						.center;
+						color: @black;
+					}
+
+					p{
+						.center;
+						font-size: 15px;
+
+					}
+				}//end text_one
+
+			}//end po_box
+
+	}//end container
+
+}//end body
+
+}//end html

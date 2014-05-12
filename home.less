@@ -22,16 +22,22 @@
 @grey: #ECECEC;
 @black: #303030;
 @white: #F9F9F9;
-@pink: #ECAEC8;
+@pink: #FD535E;
 @blue: #3FB5B4;
+@navy: #1F243E;
 
 html{
 	cursor:cell;
+
+	a{
+		cursor:cell;
+	}
+
 }
 
 h1{
 	font-size: 25px;
-	color: #FD535E;
+	color: @pink;
 	.center;
 }
 
@@ -61,27 +67,20 @@ body{
 			position:relative;
 			width: 50%;
 			margin: 22%;
-			background-color: red;
 		}
 
 		.nav{
 			.center;
-
-			#smaller_nav{
-				font-size: 1.2em;
-				padding: 0.5px;
-				width: 40%;
-				background-color: @black;
-				margin: 0 auto;
-				opacity: 0.65;	
-			}
+			margin: 0 auto;
 
 			#nav_box{
+				position: fixed;
+				margin: auto 8%;
 				font-size: 2.5em;
 				padding: 3px;
-				width: 90%;
+				width: 80%;
 				background-color: @black;
-				margin: 0 auto;
+				border-radius: 35px;
 				opacity: 0.65;
 			}
 
@@ -113,6 +112,8 @@ body{
 			.center;
 
 			#title_box{
+				position: relative;
+				.center;
 				margin: 0 auto;
 				width: 50%;
 				background-color: @grey;
@@ -123,23 +124,10 @@ body{
 			}
 
 			h1{
+				position: relative;
 				text-align: center;
-				margin: 10%;
 				font-family: Lobster, Raleway, sans-serif;
 				font-size: 5em;
-			}
-
-			img{
-				border-radius: 50%;
-				margin: 0% 3%;
-			}
-
-			img:hover{
-				opacity: 0.8;
-				-webkit-transition: all 0.25s ease 0s;
-				moz-transition: all 0.25s ease 0s;
-				-o-transition: all 0.25s ease 0s;
-				-ms-transition: all 0.25s ease 0s;
 			}
 
 		}//end about_me
